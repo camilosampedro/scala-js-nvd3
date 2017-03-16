@@ -6,7 +6,6 @@ import utest._
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import org.darker.nvd3.Ops._
 object SelectionTest extends TestSuite {
 
 

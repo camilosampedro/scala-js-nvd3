@@ -5,8 +5,6 @@ import org.scalajs.dom
 import utest._
 
 import scala.scalajs.js
-import org.darker.nvd3.Ops._
-
 
 
 object SvgLineTest extends TestSuite {

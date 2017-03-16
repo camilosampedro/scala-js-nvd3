@@ -16,14 +16,16 @@ libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.9.1"
 
 resolvers += Resolver.jcenterRepo
 
-jsDependencies ++= Seq(
-  "org.webjars" % "d3js" % "3.5.17" / "3.5.17/d3.min.js",
-  "org.webjars" % "nvd3" % "1.8.2" / "1.8.2/nvd3.min.js"
-)
+// D3 dependency
+libraryDependencies += "org.singlespaced" %%% "scalajs-d3" % "0.3.4"
+
+jsDependencies += "org.webjars" % "nvd3" % "1.8.2" / "1.8.2/nvd3.min.js"
+
 jsDependencies += RuntimeDOM
 
 // uTest settings
 libraryDependencies += "com.lihaoyi" %%% "utest" % "0.4.4" % "test"
+
 testFrameworks += new TestFramework("utest.runner.Framework")
 
 homepage := Some(url("https://github.com/camilosampedro/scala-js-nvd3"))
