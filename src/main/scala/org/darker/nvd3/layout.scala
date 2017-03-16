@@ -1,5 +1,4 @@
-package org.singlespaced.d3js
-
+package org.darker.nvd3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSExportAll, JSName, ScalaJSDefined}

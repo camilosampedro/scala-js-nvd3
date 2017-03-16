@@ -1,6 +1,7 @@
-package org.singlespaced.d3js
+package org.darker.nvd3
 
-import org.singlespaced.d3js.nvd3.Primitive
+
+import org.singlespaced.d3js.d3.Primitive
 
 import scala.language.implicitConversions
 import scala.scalajs.js

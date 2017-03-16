@@ -1,7 +1,6 @@
 
-package org.singlespaced.d3js
+package org.darker.nvd3
 
-import org.darker.nvd3.GeoObject
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -9,9 +8,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.JSName
 
 
-@JSName("nvd3")
+@JSName("d3")
 @js.native
-object nvd3 extends js.Object  {
+object d3 extends js.Object  {
 
   type Primitive = Double | String | Boolean
 

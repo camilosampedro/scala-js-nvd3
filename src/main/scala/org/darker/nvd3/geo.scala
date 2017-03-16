@@ -1,14 +1,16 @@
 package org.darker.nvd3
 
-import org.scalajs.dom
+
 
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation.JSName
+import js.annotation.JSName
+import org.scalajs.dom
+import js.`|`
 
 @JSName("d3.geo")
 @js.native
 trait GeoObject extends js.Object {
+  import geo._
 
   def path(): Path = js.native
 
@@ -72,7 +74,8 @@ trait GeoObject extends js.Object {
   //TODO define forwarders
 
 }
-@js.native
+package geo {
+  @js.native
   trait Path extends js.Function2[/*feature*/ js.Any, /*index*/ Double,String] {
     def area(feature: js.Any): Double = js.native
     def centroid(feature: js.Any): js.Tuple2[Double, Double] = js.native
@@ -332,5 +335,7 @@ trait RawProjection extends js.Object {
 @js.native
 trait RawInvertibleProjection extends RawProjection {
   def invert(x: Double, y: Double): js.Tuple2[Double, Double] = js.native
+}
+
 }
 

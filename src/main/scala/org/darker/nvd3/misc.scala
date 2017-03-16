@@ -1,7 +1,7 @@
-package org.singlespaced.d3js
+package org.darker.nvd3
 
 import org.scalajs.dom
-import nvd3.Primitive
+import d3.Primitive
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

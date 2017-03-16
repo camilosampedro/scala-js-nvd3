@@ -1,5 +1,6 @@
 package org.singlespaced.d3js
 
+import org.darker.nvd3.nvd3
 import org.scalajs.dom
 import utest._
 

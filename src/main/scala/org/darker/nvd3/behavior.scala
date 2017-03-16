@@ -1,15 +1,29 @@
 package org.darker.nvd3
 
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
 
+@JSName("d3.behavior")
 @js.native
-trait Scale extends BaseScale[Double,Double,Scale] {
+trait BehaviorObject extends js.Object {
+  def drag[Datum](): behavior.Drag[Datum] = js.native
+
+  def zoom[Datum](): behavior.Zoom[Datum] = js.native
 
 }
-@js.native
-trait Scale extends BaseScale[Double,Double,Scale] {
+package behavior {
 
+@js.native
+trait Drag[Datum] extends js.Function1[Selection[Datum],Unit] {
+
+  def on(`type`: String): js.Function2[Datum, Double, Any] = js.native
+
+  def on(`type`: String, listener: js.Function2[Datum, Double, Any]): Drag[Datum] = js.native
+
+  def origin(): js.Function2[Datum, Double, js.Any] = js.native
+
+  def origin(accessor: js.Function2[Datum, Double, js.Any]): Drag[Datum] = js.native
 }
 
 @js.native
@@ -52,8 +66,17 @@ trait Zoom[Datum] extends js.Function1[Selection[Datum],Unit] {
   def event(transition: Transition[Datum]): Unit = js.native
 }
 
+package zoom {
+
+
 @js.native
 trait Scale extends BaseScale[Double,Double,Scale] {
+
+}
+
+
+}
+
 
 }
 

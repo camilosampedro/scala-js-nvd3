@@ -1,8 +1,9 @@
 package org.singlespaced.d3js
 
+import org.darker.nvd3.nvd3
 import org.scalajs.dom
-import org.singlespaced.d3js.Ops._
-import org.singlespaced.d3js.nvd3.Primitive
+import org.darker.nvd3.Ops._
+import org.darker.nvd3.nvd3.Primitive
 import utest._
 
 import scala.scalajs.js

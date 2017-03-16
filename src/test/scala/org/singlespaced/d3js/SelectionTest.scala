@@ -1,10 +1,12 @@
 package org.singlespaced.d3js
 
+import org.darker.nvd3.{Selection, nvd3}
 import org.scalajs.dom
 import utest._
+
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import org.singlespaced.d3js.Ops._
+import org.darker.nvd3.Ops._
 object SelectionTest extends TestSuite {
 
 
